@@ -19,7 +19,7 @@
       }
 
       function displayContents() {
-        if(ready.readyState == 4) {
+        if(reader.readyState == 4) {
           var el = document.getElementById('main');
           el.innerHTML = reader.responseText;
         }
