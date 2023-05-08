@@ -126,8 +126,11 @@
           rook = new MapIcon({iconUrl: './Rock.png', popupAnchor: [3, 15]}),
           shopping = new MapIcon({iconUrl: './Shopping.png'}),
           sigma = new MapIcon({iconUrl: './Sigma.png', popupAnchor: [3, 15]}),
-          suzzallo = new MapIcon({iconUrl: './Suzzallo.png'})
+          suzzallo = new MapIcon({iconUrl: './Suzzallo.png'}),
+          flag = new MapIcon({iconUrl: '.Flag.png'})
 
+      L.marker([1533.4043,3418.2447], {icon: flag}).addTo(map).bindPopup("<img class='landscape' src='./Flag.PNG'/>");
+      
       L.marker([2352.9574, 2015.5426], {icon: grad}).addTo(map).bindPopup("<img class='landscape' src='./Grad.jpg'/>" + "<p class='captions'>When first arriving at the University of Washington you would be issued an ID card like this. Only being used for one school year, it would be made of a thin cardstock and would help you register for classes, get food in the dining hall, and be used as a season football ticket.</p>");
 
       L.marker([538.6596, 444.5106], {icon: column}).addTo(map).bindPopup("<img class='portrait' src='./Columns.JPG'/>" + "<p class='captions'>Where every UW tour ends, the original columns have become an icon of the campus in their present location on Sylvan Grove. The original University building downtown had survived up until 1911, but as the city expanded northward, the land in which the building sat on became more valuable. Sadly it would have only cost the school $10,000 to save the building and move it to the present campus location, but despite then president Kane and alumni’s efforts to raise the money, the school was more focused on the future instead of its past and only the columns would survive and be moved onto the new campus.</p>");
