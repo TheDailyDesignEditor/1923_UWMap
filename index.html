@@ -95,12 +95,12 @@
       }
 
       var bounds = [[0, 0], [2821, 4407]];
-      var image = L.imageOverlay('./Static/uw_map.jpg', bounds).addTo(map);
+      var image = L.imageOverlay('./uw_map.jpg', bounds).addTo(map);
       map.fitBounds(bounds);
 
       var MapIcon = L.Icon.extend({
         options: {
-          shadowUrl: './Static/Icons/Icon_Shadow.png',
+          shadowUrl: './Icon_Shadow.png',
           iconSize: [60, 60],
           shadowSize: [60, 60],
           iconAnchor: [30, 30],
@@ -109,42 +109,42 @@
         }
       });
 
-      var grad = new MapIcon({iconUrl: './Static/Icons/Grad.png'}),
-          column = new MapIcon({iconUrl: './Static/Icons/Column.png'}),
-          diploma = new MapIcon({iconUrl: './Static/Icons/Diploma.png'}),
-          football = new MapIcon({iconUrl: './Static/Icons/Football.png'}),
-          gym = new MapIcon({iconUrl: './Static/Icons/Gym.png'}),
-          magazine = new MapIcon({iconUrl: './Static/Icons/Magazine.png'}),
-          newspaper = new MapIcon({iconUrl: './Static/Icons/Newspaper.png'}),
-          president = new MapIcon({iconUrl: './Static/Icons/President.png'}),
-          rook = new MapIcon({iconUrl: './Static/Icons/Rock.png'}),
-          shopping = new MapIcon({iconUrl: './Static/Icons/Shopping.png'}),
-          sigma = new MapIcon({iconUrl: './Static/Icons/Sigma.png'}),
-          suzzallo = new MapIcon({iconUrl: './Static/Icons/Suzzallo.png'})
+      var grad = new MapIcon({iconUrl: './Grad.png'}),
+          column = new MapIcon({iconUrl: './Column.png'}),
+          diploma = new MapIcon({iconUrl: './Diploma.png'}),
+          football = new MapIcon({iconUrl: './Football.png'}),
+          gym = new MapIcon({iconUrl: './Gym.png'}),
+          magazine = new MapIcon({iconUrl: './Magazine.png'}),
+          newspaper = new MapIcon({iconUrl: './Newspaper.png'}),
+          president = new MapIcon({iconUrl: './President.png'}),
+          rook = new MapIcon({iconUrl: './Rock.png'}),
+          shopping = new MapIcon({iconUrl: './Shopping.png'}),
+          sigma = new MapIcon({iconUrl: './Sigma.png'}),
+          suzzallo = new MapIcon({iconUrl: './Suzzallo.png'})
 
-      L.marker([2352.9574, 2015.5426], {icon: grad}).addTo(map).bindPopup("img class='landscape' src='./Static/Artifacts/Grad.jpg'/>" + loadFile("./Static/Captions/Grad.txt"));
+      L.marker([2352.9574, 2015.5426], {icon: grad}).addTo(map).bindPopup("img class='landscape' src='./Grad.jpg'/>" + loadFile("./Grad.txt"));
 
-      L.marker([538.6596, 444.5106], {icon: column}).addTo(map).bindPopup("img class='portrait' src='./Static/Artifacts/Columns.jpg'/>" + loadFile("./Static/Captions/Column.txt"));
+      L.marker([538.6596, 444.5106], {icon: column}).addTo(map).bindPopup("img class='portrait' src='./Columns.jpg'/>" + loadFile("./Column.txt"));
 
-      L.marker([1731.25, 1993.2766], {icon: diploma}).addTo(map).bindPopup("img class='portrait' src='./Static/Artifacts/Diploma.jpg'/>" + loadFile("./Static/Captions/Diploma.txt"));
+      L.marker([1731.25, 1993.2766], {icon: diploma}).addTo(map).bindPopup("img class='portrait' src='./Diploma.jpg'/>" + loadFile("./Diploma.txt"));
 
-      L.marker([579.2553, 2683.4043], {icon: football}).addTo(map).bindPopup("img class='portrait' src='./Static/Artifacts/Footbal.jpg'/>" + loadFile("./Static/Captions/Football.txt"));
+      L.marker([579.2553, 2683.4043], {icon: football}).addTo(map).bindPopup("img class='portrait' src='./Football.jpg'/>" + loadFile("./Football.txt"));
 
-      L.marker([1879.8511, 2781.4468], {icon: gym}).addTo(map).bindPopup("img class='portrait' src='./Static/Artifacts/Gym.jpg'/>" + loadFile("./Static/Captions/Gym.txt"));
+      L.marker([1879.8511, 2781.4468], {icon: gym}).addTo(map).bindPopup("img class='portrait' src='./Gym.jpg'/>" + loadFile("./Gym.txt"));
 
-      L.marker([2077.7128, 671.5106], {icon: magazine}).addTo(map).bindPopup("img class='portrait' src='./Static/Artifacts/Magazine.jpg'/>" + loadFile("./Static/Captions/Magazine.txt"));
+      L.marker([2077.7128, 671.5106], {icon: magazine}).addTo(map).bindPopup("img class='portrait' src='./Magazine.jpg'/>" + loadFile("./Magazine.txt"));
 
-      L.marker([1381.0851, 2472.9043], {icon: newspaper}).addTo(map).bindPopup("img class='portrait' src='./Static/Artifacts/Newspaper.jpg'/>" + loadFile("./Static/Captions/Newspaper.txt"));
+      L.marker([1381.0851, 2472.9043], {icon: newspaper}).addTo(map).bindPopup("img class='portrait' src='./Newspaper.jpg'/>" + loadFile("./Newspaper.txt"));
 
-      L.marker([2166.7021, 2410.0957], {icon: president}).addTo(map).bindPopup("img class='portrait' src='./Static/Artifacts/President.jpg'/>" + loadFile("./Static/Captions/President.txt"));
+      L.marker([2166.7021, 2410.0957], {icon: president}).addTo(map).bindPopup("img class='portrait' src='./President.jpg'/>" + loadFile("./President.txt"));
 
-      L.marker([1993.3511, 1748.9362], {icon: rook}).addTo(map).bindPopup("img class='portrait' src='/Static/Artifacts/Tower.jpg'/>" + loadFile("Static/Captions/Tower.txt"));
+      L.marker([1993.3511, 1748.9362], {icon: rook}).addTo(map).bindPopup("img class='portrait' src='./Tower.jpg'/>" + loadFile("./Tower.txt"));
 
-      L.marker([1993.3511, 499.6596], {icon: shopping}).addTo(map).bindPopup("img class='landscape' src='./Static/Artifacts/Shopping.jpg'/>" + loadFile("./Static/Captions/Ave.txt"));
+      L.marker([1993.3511, 499.6596], {icon: shopping}).addTo(map).bindPopup("img class='landscape' src='./Shopping.jpg'/>" + loadFile("./Ave.txt"));
 
-      L.marker([2451.2553, 2744.4043], {icon: sigma}).addTo(map).bindPopup("img class='landscape' src='./Static/Artifacts/Greek.jpg'/>" + loadFile("./Static/Captions/Greek.txt"));
+      L.marker([2451.2553, 2744.4043], {icon: sigma}).addTo(map).bindPopup("img class='landscape' src='./Greek.jpg'/>" + loadFile("./Greek.txt"));
 
-      L.marker([2207.7979, 1390.6064], {icon: suzzallo}).addTo(map).bindPopup("img class='portrait' src='./Static/Artifacts/Suzzallo.jpg'/>" + loadFile("./Static/Captions/Suzzallo.txt"));
+      L.marker([2207.7979, 1390.6064], {icon: suzzallo}).addTo(map).bindPopup("img class='portrait' src='./Suzzallo.jpg'/>" + loadFile("./Suzzallo.txt"));
 
     </script>
 
